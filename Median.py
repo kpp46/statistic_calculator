@@ -1,7 +1,8 @@
 from Division import division
-from Subtraction import subtraction
 from Mean import mean
+from Subtraction import subtraction
 from check_emptylist import check
+
 
 def median(data):
     data = check(data)
@@ -18,10 +19,3 @@ def median(data):
         middleindex = int(division(2, len(data)))
         middleval = data[middleindex]
         return middleval
-
-
-
-
-
-
-

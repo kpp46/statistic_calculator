@@ -1,34 +1,28 @@
-import unittest
+import ast
 import random
-import numpy as np
-from numpy.random import seed
-from numpy.random import randint
+import unittest
 
+import numpy as np
+from numpy.random import randint
+from numpy.random import seed
+
+from Confidence_interval import confidence_interval_bottom
+from Confidence_interval import result_confidence_interval_bottom
+from CsvReader import CsvReader
 from ItemsWithSeed import items_with_seed
+from ItemsWoutSeed import items_without_seed
+from Margin_Error import margin_error2
+from Margin_Error import result_margin_error2
+from NListWithSeed import generator_int_and_float
 from RandomItem import random_item
 from RandomNumberWithSeed import random_integer, random_float
 from RandomlySelectSame import randomly_same
-
-from CsvReader import CsvReader
-import ast
-from ItemsWithSeed import items_with_seed
-from RandomlySelectSame import randomly_same
-from ItemsWoutSeed import items_without_seed
-from Confidence_interval import confidence_interval_bottom
-from Confidence_interval import result_confidence_interval_bottom
 from Sample_random_Sampling import population
-from NListWithSeed import generator_int_and_float
-from Margin_Error import margin_error2
-from Margin_Error import result_margin_error2
-from TestSize import testSize
+from Statistics import Statistics
 from TestSize import result_testSize
+from TestSize import testSize
 from TestWithoutStandDevi import TestWithoutStandDevi
 from TestWithoutStandDevi import result_withoutStandDevi
-import pprint
-from Statistics import Statistics
-from ItemsWithSeed import items_with_seed
-from RandomlySelectSame import randomly_same
-from ItemsWoutSeed import items_without_seed
 
 
 class MyTestCase(unittest.TestCase):
@@ -77,7 +71,6 @@ class MyTestCase(unittest.TestCase):
             input_data = ast.literal_eval(row['input'])
             self.assertEqual(round(self.statistics.stddev(input_data), 2), round(float(row['standard_deviation']), 2))
             self.assertEqual(round(self.statistics.result, 2), round(float(row['standard_deviation']), 2))
-
 
     def test_items_with_seed(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

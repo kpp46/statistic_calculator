@@ -2,6 +2,7 @@ from Addition import addition
 from Division import division
 from check_emptylist import check
 
+
 def mean(data):
     data = check(data)
     num_values = len(data)
@@ -9,4 +10,3 @@ def mean(data):
     for num in data:
         total = addition(total, num)
     return division(num_values, total)
-

@@ -6,5 +6,3 @@ def randomly_same(num):
     random.seed(5)
     number_list = random.sample(nlist, num)
     return number_list
-
-

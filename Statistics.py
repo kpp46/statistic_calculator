@@ -1,28 +1,23 @@
+from Zscore import zscore
+
 from Calculator import Calculator
-from TestWithoutStandDevi import TestWithoutStandDevi
-from TestSize import testSize
 from Confidence_interval import confidence_interval_bottom
+from ItemsWithSeed import items_with_seed
+from ItemsWoutSeed import items_without_seed
 from Margin_Error import margin_error2
 from Mean import mean
 from Median import median
 from Mode import mode
-from Sample_random_Sampling import population
-from Standard_Deviation import stddev
-from Variance import variance
-from Zscore import zscore
-from RandomNumberWithSeed import random_integer
-from ItemsWoutSeed import items_without_seed
-from ItemsWithSeed import items_with_seed
 from NListWithSeed import generator_int_and_float
 from RandomItem import random_item
+from RandomNumberWithSeed import random_integer
 from RandomNumberWoutSeed import random_integer
 from RandomlySelectSame import randomly_same
-from Confidence_interval import confidence_interval_bottom
 from Sample_random_Sampling import population
-from NListWithSeed import generator_int_and_float
-from Margin_Error import margin_error2
+from Standard_Deviation import stddev
 from TestSize import testSize
 from TestWithoutStandDevi import TestWithoutStandDevi
+from Variance import variance
 
 
 class Statistics(Calculator):

@@ -10,25 +10,25 @@ def testSize(proportion, probability, precision):
     me = float(precision)
     if p == 80:
         z = 1.282
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 85:
         z = 1.440
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 90:
         z = 1.645
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 95:
         z = 1.960
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 99:
         z = 2.576
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 99.5:
         z = 2.807
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     elif p == 99.9:
         z = 3.291
-        return round(division(sq(me), mul(mul(p1, q), sq(z) )), 5)
+        return round(division(sq(me), mul(mul(p1, q), sq(z))), 5)
     else:
         print("please select one interval")
 

@@ -1,8 +1,8 @@
 from Mean import mean
+from Square import sq
 # from Division import division
 # from Addition import addition
 from Subtraction import subtraction
-from Square import sq
 from check_emptylist import check
 
 

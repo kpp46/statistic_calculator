@@ -1,5 +1,5 @@
-from Variance import variance
 from Square_root import sqr
+from Variance import variance
 from check_emptylist import check
 
 

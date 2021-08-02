@@ -1,4 +1,5 @@
 import random
+
 from NListWithSeed import generator_int_and_float
 
 

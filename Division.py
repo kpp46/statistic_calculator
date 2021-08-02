@@ -4,5 +4,3 @@ def division(a, b):
         return c
     except ZeroDivisionError as err:
         raise err
-
-

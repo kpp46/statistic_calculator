@@ -1,10 +1,12 @@
-from Division import division
-from Multipule import mul
-from Square_root import sqr
-from Standard_Deviation import stddev
-from NListWithSeed import generator_int_and_float
 import math
 import statistics
+
+from Division import division
+from Multipule import mul
+from NListWithSeed import generator_int_and_float
+from Square_root import sqr
+from Standard_Deviation import stddev
+
 sample = generator_int_and_float(10, 30)
 
 
